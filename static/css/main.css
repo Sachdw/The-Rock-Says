@@ -1,0 +1,54 @@
+body {
+  background-color: white;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: 'Karla';
+  font-size: 13px;
+}
+
+input {
+  font-family: 'Karla';
+  font-size: 11px;
+}
+
+.container{
+  width:100%;
+}
+
+.box{
+		background-color:white;
+		border-style:solid;
+		padding:10px;
+		margin:auto;
+
+	}
+
+#containerMid {
+  	height:200px;
+  	width:75%;
+    padding:10px;
+    margin: 0 auto;
+    backround: white;
+  	/*background: rgb(9,7,50);
+  	background: linear-gradient(180deg, rgba(9,7,50,1) 28%, rgba(13,121,143,1) 72%);*/
+  	text-align:center;
+  	}
+
+#main_title{
+  text-align = center;
+	color:black;
+  font-family: 'Reey', cursive;
+	padding-top:15px;
+	padding-bottom:20px;
+  font-size: 52px;
+  background: -webkit-linear-gradient(rgba(9,7,50,1) 28%, rgba(13,121,143,1) 72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+	}
