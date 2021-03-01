@@ -1,7 +1,8 @@
-This is a personal project where I adapted the code found in this tutorial from Tensorflow: 
+This is a personal project where I created a simple LSTM RNN model capable of generating short texts in the style of former professional wrestler, the Rock. I created the model by adapting the code found in this tutorial from Tensorflow: 
 
 https://www.tensorflow.org/tutorials/text/text_generation 
 
-In order to make an LSTM RNN model capable of generating short texts in the style of former professional Wrestler, the Rock.
-The project involved transcribing videos of his old promos as text to create an original text file. 
-The finished project is currently deployed to Heroku as a web app: https://the-rock-says.herokuapp.com/
+The project involved transcribing videos of his old promos as text to create an original text file.
+I also used python Flask to create a simple webpage for the model. You can try it by visiting the link below and entering any word/phrase. The model will use the word/phase you entered to try to predict the next character in sequence based on the text file it was trained on.
+
+The project is currently deployed to Heroku as a web app: https://the-rock-says.herokuapp.com/
