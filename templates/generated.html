@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>The Rock Says</title>
+
+{% endblock %}
+
+{% block body %}
+<h1 id ="main_title">The Rock <br>Says</h1>
+
+<div class="container-fluid" id=containerMid>
+  <div class="col-md-3 box"><p>{{text}}</p>
+  </div>
+  <form action = "#" method = "post">
+    <div class='form-group' style = 'padding: 10px'>
+     <input required = 'required' placeholder="Enter a word or phrase..." name = 'first_word'></input>
+     </div>
+     <input type ="submit" value = "Generate Text"></input>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>The Rock Says</title>
+
+{% endblock %}
+
+{% block body %}
+<h1 id ="main_title">The Rock <br>Says</h1>
+
+<div class="container-fluid" id=containerMid>
+  <div class="col-md-3 box"><p>Finally the Rock has come back to your browser! Welcome to the people's AI, Jabroni!<br><br>
+  So you want to see what the people's bot has to say!? Well, the Rock says, the fact of the
+  matter is this. You will see what the people's bot has to say. But you can't expect
+  the Rock to do all the work! Oh no no no, if you want to use the people's bot, you are going to have to give the Rock
+  some... inspiration! Let the Rock tell you a little something. Enter a word or phrase, and the Rock means ANY word or phrase, and
+  you will read the most electrifying words on the internet!<br><br>If you smell what the Rock is cooking!
+  </p>
+  </div>
+
+  <form action = "#" method = "post">
+    <div class='form-group' style = 'padding: 10px'>
+     <input required = 'required' placeholder="Enter a word or phrase..." name = 'first_word'></input>
+     </div>
+     <input type ="submit" value = "Generate Text"></input>
+  </form>
+</div>
+
+{% endblock %}
