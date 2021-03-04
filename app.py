@@ -28,6 +28,7 @@ def home():
 def get_data():
     start = request.form['first_word']
     text = generate_text(model, start)
+    #Loads a secondary page with the generated text included
     return render_template('generated.html',text=text)
 
 
