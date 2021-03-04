@@ -5,16 +5,17 @@ from pathlib import Path
 from tensorflow import random, expand_dims, squeeze
 import os
 
-
+#Import text
 file_path = 'theRock.txt'
 text = open(file_path, 'rb').read().decode(encoding='utf-8')
 vocab = sorted(set(text))
 
+#Convert characters in text to integers
 char2idx = {u:i for i, u in enumerate(vocab)}
 idx2char = np.array(vocab)
 text_as_int = np.array([char2idx[c] for c in text])
 
-
+#Define the RNN model
 def build_model(vocab_size, embedding_dim, rnn_units, batch_size):
   model = Sequential([
     layers.Embedding(vocab_size, embedding_dim,
@@ -27,9 +28,8 @@ def build_model(vocab_size, embedding_dim, rnn_units, batch_size):
   ])
   return model
 
-
+#Function to generate text using the RNN. Takes a string as an input
 def generate_text(model, start_string, temp=0.8):
-  # Evaluation step (generating text using the learned model)
 
   # Number of characters to generate
   num_generate = 1000
