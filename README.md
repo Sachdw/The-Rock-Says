@@ -3,6 +3,6 @@ This is a personal project where I created a simple LSTM RNN model capable of ge
 https://www.tensorflow.org/tutorials/text/text_generation 
 
 The project involved transcribing videos of his old promos as text to create an original text file.
-I also used python Flask to create a simple webpage for the model. You can try it by visiting the link below and entering any word/phrase. The model will use the word/phase you entered to try to predict the next character in sequence based on the text file it was trained on.
+I also used python Flask to create a simple web applicatoin for the model. You can try it out by visiting the link below and entering any word/phrase. The model will use the word/phase you entered to try to predict the next character in sequence based on the text file it was trained on.
 
 The project is currently deployed to Heroku as a web app: https://the-rock-says.herokuapp.com/
